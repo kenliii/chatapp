@@ -40,6 +40,14 @@ const Auth = () => {
         cookies.set('username', username);
         cookies.set('fullName', fullName);
         cookies.set('userId', userId);
+
+        if(isSignup) {
+            cookies.set('phoneNumber', phoneNumber);
+            cookies.set('avatarURL', avatarURL);
+            cookies.set('hashedPassword', hashedPassword);
+        }
+
+        window.location.reload();
     }
 
     const switchMode = () => {
@@ -94,6 +102,7 @@ const Auth = () => {
                                 type='text'
                                 placeholder='Avatar URL'
                                 onChange={handleChange}
+                                autoComplete="new-password"
                                 required
                             />
                         </div>
@@ -105,6 +114,7 @@ const Auth = () => {
                                 type='password'
                                 placeholder='Password'
                                 onChange={handleChange}
+                                autoComplete="new-password"
                                 required
                             />
                         </div>
@@ -116,6 +126,7 @@ const Auth = () => {
                                 type='password'
                                 placeholder=' Confirm Password'
                                 onChange={handleChange}
+                                autoComplete="new-password"
                                 required
                             />
                         </div>

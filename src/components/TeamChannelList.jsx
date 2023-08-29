@@ -29,7 +29,7 @@ const TeamChannelList = ({children, error = false, loading, type}) => {
             </p>
             {/* TODO: add button to create new channel */}
         </div>
-        children
+        {children}
     </div>
   )
 }

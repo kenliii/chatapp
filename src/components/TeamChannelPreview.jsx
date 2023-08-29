@@ -27,7 +27,7 @@ const TeamChannelPreview = ({channel,type}) => {
   return (
     <div className={
         channel?.id === activeChannel?.id
-        ? 'channel-oreview__wrapper__selected'
+        ? 'channel-preview__wrapper__selected'
         : 'channel-preview__wrapper'
     }
     onClick={() => {

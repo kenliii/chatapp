@@ -1,5 +1,3 @@
-Of course, I can help you create a README file for your chat application for doctors. A README file is essential for providing information to users and potential contributors. Here's a template you can use as a starting point:
-
 # Doctor Chat Application
 
 ## Overview
